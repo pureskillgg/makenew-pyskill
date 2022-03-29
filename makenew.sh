@@ -66,14 +66,15 @@ makenew () {
   find_replace "s/current_version = .*/current_version = 0.0.0/g"
   find_replace "s/Python Package Skeleton/${mk_title}/g"
   find_replace "s/Package skeleton for a Python module\./${mk_description}/g"
-  find_replace "s/2022 Evan Sosenko/2022 ${mk_author}/g"
-  find_replace "s/Evan Sosenko/${mk_author}/g"
-  find_replace "s/razorx@evansosenko\.com/${mk_email}/g"
-  find_replace "s/makenew\/pypackage/${mk_user}\/${mk_repo}/g"
-  find_replace "s/makenew-pypackage/${mk_slug}/g"
-  find_replace "s/makenew_pypackage/${mk_module}/g"
+  find_replace "s/2022 FPS Critic, Inc/2022 ${mk_author}/g"
+  find_replace "s/PureSkill\.gg/${mk_author}/g"
+  find_replace "s/contact@pureskill\.gg/${mk_email}/g"
+  find_replace "s/pureskillgg\/makenew-pyskill/${mk_user}\/${mk_repo}/g"
+  find_replace "s/pureskillgg-makenew-pyskill/${mk_slug}/g"
+  find_replace "s/makenew-pyskill/${mk_slug}/g"
+  find_replace "s/pureskillgg_makenew_pyskill/${mk_module}/g"
 
-  git mv makenew_pypackage ${mk_module}
+  git mv pureskillgg_makenew_pyskill ${mk_module}
 
   echo
   echo 'Replacing boilerplate.'

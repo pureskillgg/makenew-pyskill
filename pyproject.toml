@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "makenew-pypackage"
+name = "pureskillgg-makenew-pyskill"
 version = "3.15.1"
 description = "Package skeleton for a Python module."
-authors = ["Evan Sosenko <razorx@evansosenko.com>"]
+authors = ["PureSkill.gg <contact@pureskill.gg>"]
 license = "MIT"
 readme = "README.rst"
-homepage = "https://github.com/makenew/pypackage"
-repository = "https://github.com/makenew/pypackage"
+homepage = "https://github.com/pureskillgg/makenew-pyskill"
+repository = "https://github.com/pureskillgg/makenew-pyskill"
 include = ['poetry.lock']
 
 [tool.poetry.dependencies]
