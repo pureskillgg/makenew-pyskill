@@ -64,8 +64,8 @@ makenew () {
 
   find_replace "s/^version = \".*/version = \"0.0.0\"/g"
   find_replace "s/current_version = .*/current_version = 0.0.0/g"
-  find_replace "s/Python Package Skeleton/${mk_title}/g"
-  find_replace "s/Package skeleton for a Python module\./${mk_description}/g"
+  find_replace "s/PureSkill.gg PySkill Skeleton/${mk_title}/g"
+  find_replace "s/Package skeleton for a PureSkill.gg PySkill\./${mk_description}/g"
   find_replace "s/2022 FPS Critic, Inc/2022 ${mk_author}/g"
   find_replace "s/PureSkill\.gg/${mk_author}/g"
   find_replace "s/contact@pureskill\.gg/${mk_email}/g"

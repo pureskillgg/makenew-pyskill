@@ -1,5 +1,5 @@
-Python Package Skeleton
-=======================
+PureSkill.gg PySkill Skeleton
+=============================
 
 |PyPI| |GitHub Actions|
 
@@ -10,12 +10,12 @@ Python Package Skeleton
    :target: https://github.com/pureskillgg/makenew-pyskill/actions
    :alt: GitHub Actions
 
-Package skeleton for a Python module.
+Package skeleton for a PureSkill.gg PySkill.
 
 Description
 -----------
 
-Bootstrap a new Python_ package in less than a minute.
+Bootstrap a new Python_ PureSkill.gg PySkill in less than a minute.
 
 .. _Python: https://www.python.org/
 
