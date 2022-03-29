@@ -10,7 +10,7 @@ repository = "https://github.com/pureskillgg/makenew-pyskill"
 include = ['poetry.lock']
 
 [tool.poetry.dependencies]
-python = "^3.10.0"
+python = ">=3.9, <3.10"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
