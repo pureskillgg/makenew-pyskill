@@ -3,8 +3,8 @@ Python Package Skeleton
 
 |PyPI| |GitHub Actions|
 
-.. |PyPI| image:: https://img.shields.io/pypi/v/makenew-pyskill.svg
-   :target: https://pypi.python.org/pypi/makenew-pyskill
+.. |PyPI| image:: https://img.shields.io/pypi/v/pureskillgg-makenew-pyskill.svg
+   :target: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
    :alt: PyPI
 .. |GitHub Actions| image:: https://github.com/pureskillgg/makenew-pyskill/workflows/main/badge.svg
    :target: https://github.com/pureskillgg/makenew-pyskill/actions
@@ -138,7 +138,7 @@ Install it with
 
     $ poetry add pureskillgg_makenew_pyskill
 
-.. _pureskillgg_makenew_pyskill: https://pypi.python.org/pypi/makenew-pyskill
+.. _pureskillgg_makenew_pyskill: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
 .. _Python Package Index (PyPI): https://pypi.python.org/
 
 Development and Testing
