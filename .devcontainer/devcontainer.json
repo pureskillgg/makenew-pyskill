@@ -12,10 +12,12 @@
     "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
   },
   "extensions": [
+    "ms-toolsai.jupyter",
     "ms-vsliveshare.vsliveshare",
     "ms-python.python",
     "EditorConfig.EditorConfig"
   ],
+  "forwardPorts": [8888],
   "postCreateCommand": "poetry install",
   "remoteUser": "vscode"
 }
