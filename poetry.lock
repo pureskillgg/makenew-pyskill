@@ -1060,7 +1060,7 @@ tests = ["pytest"]
 
 [[package]]
 name = "pureskillgg-dsdk"
-version = "0.14.0"
+version = "0.15.0"
 description = "Python Data Science Development Kit."
 category = "main"
 optional = false
@@ -1072,6 +1072,7 @@ hdbscan = ">=0.8.27,<0.9.0"
 pandas = ">=1.2.1,<2.0.0"
 pyarrow = ">=7.0.0,<8.0.0"
 python-rapidjson = ">=1.6,<2.0"
+structlog = ">=21.5.0,<22.0.0"
 
 [[package]]
 name = "py"
@@ -1493,6 +1494,19 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["pytest", "typeguard", "pygments", "littleutils", "cython"]
+
+[[package]]
+name = "structlog"
+version = "21.5.0"
+description = "Structured Logging for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["pre-commit", "rich", "cogapp", "tomli", "coverage", "freezegun (>=0.2.8)", "pretend", "pytest-asyncio", "pytest (>=6.0)", "simplejson", "furo", "sphinx", "sphinx-notfound-page", "sphinxcontrib-mermaid", "twisted"]
+docs = ["furo", "sphinx", "sphinx-notfound-page", "sphinxcontrib-mermaid", "twisted"]
+tests = ["coverage", "freezegun (>=0.2.8)", "pretend", "pytest-asyncio", "pytest (>=6.0)", "simplejson"]
 
 [[package]]
 name = "terminado"
@@ -2455,8 +2469,8 @@ pure-eval = [
     {file = "pure_eval-0.2.2.tar.gz", hash = "sha256:2b45320af6dfaa1750f543d714b6d1c520a1688dec6fd24d339063ce0aaa9ac3"},
 ]
 pureskillgg-dsdk = [
-    {file = "pureskillgg-dsdk-0.14.0.tar.gz", hash = "sha256:843c7edbb8559e243d20d90cd32aed1ea823eeddc06f54a79ee0d1ba07ae12cb"},
-    {file = "pureskillgg_dsdk-0.14.0-py3-none-any.whl", hash = "sha256:87d4313affa295e31600c0fa056580edc81415b1ba910b58be12422d60ee4945"},
+    {file = "pureskillgg-dsdk-0.15.0.tar.gz", hash = "sha256:ad768489d3373c8b81e30e1f46d66b23391919253e9fa7f0a934ef178c0c159d"},
+    {file = "pureskillgg_dsdk-0.15.0-py3-none-any.whl", hash = "sha256:80ba2deca234a65a43e3fd5cf272d1827ad0c605652e9b041cbf44f7237a0d93"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
@@ -2779,6 +2793,10 @@ soupsieve = [
 stack-data = [
     {file = "stack_data-0.2.0-py3-none-any.whl", hash = "sha256:999762f9c3132308789affa03e9271bbbe947bf78311851f4d485d8402ed858e"},
     {file = "stack_data-0.2.0.tar.gz", hash = "sha256:45692d41bd633a9503a5195552df22b583caf16f0b27c4e58c98d88c8b648e12"},
+]
+structlog = [
+    {file = "structlog-21.5.0-py3-none-any.whl", hash = "sha256:fd7922e195262b337da85c2a91c84be94ccab1f8fd1957bd6986f6904e3761c8"},
+    {file = "structlog-21.5.0.tar.gz", hash = "sha256:68c4c29c003714fe86834f347cb107452847ba52414390a7ee583472bde00fc9"},
 ]
 terminado = [
     {file = "terminado-0.13.3-py3-none-any.whl", hash = "sha256:874d4ea3183536c1782d13c7c91342ef0cf4e5ee1d53633029cbc972c8760bd8"},
