@@ -1060,7 +1060,7 @@ tests = ["pytest"]
 
 [[package]]
 name = "pureskillgg-dsdk"
-version = "0.15.0"
+version = "0.18.0"
 description = "Python Data Science Development Kit."
 category = "main"
 optional = false
@@ -2469,8 +2469,8 @@ pure-eval = [
     {file = "pure_eval-0.2.2.tar.gz", hash = "sha256:2b45320af6dfaa1750f543d714b6d1c520a1688dec6fd24d339063ce0aaa9ac3"},
 ]
 pureskillgg-dsdk = [
-    {file = "pureskillgg-dsdk-0.15.0.tar.gz", hash = "sha256:ad768489d3373c8b81e30e1f46d66b23391919253e9fa7f0a934ef178c0c159d"},
-    {file = "pureskillgg_dsdk-0.15.0-py3-none-any.whl", hash = "sha256:80ba2deca234a65a43e3fd5cf272d1827ad0c605652e9b041cbf44f7237a0d93"},
+    {file = "pureskillgg-dsdk-0.18.0.tar.gz", hash = "sha256:655c81a845d9419e536e9d90e493602341c6fafed181060ec765adaecaa6fe0f"},
+    {file = "pureskillgg_dsdk-0.18.0-py3-none-any.whl", hash = "sha256:09dec31f6b0348439cfde95bf82498f411b4f3312dc499528e49a03e19742072"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
