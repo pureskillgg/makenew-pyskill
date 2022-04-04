@@ -4,6 +4,8 @@ Setup env vars
 import os
 from dotenv import load_dotenv
 
+env_prefix = "pureskillgg_tome"
+
 
 def setup_env_from_dotenv():
     """
@@ -37,6 +39,5 @@ def get_env_var(name):
     """
     Helper to get environment variables
     """
-    env_prefix = "pureskillgg_tome"
     key = "_".join([env_prefix, name]).upper()
     return os.environ.get(key), key
