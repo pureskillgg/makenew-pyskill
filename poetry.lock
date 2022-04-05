@@ -146,14 +146,14 @@ webencodings = "*"
 
 [[package]]
 name = "boto3"
-version = "1.21.29"
+version = "1.21.33"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 3.6"
 
 [package.dependencies]
-botocore = ">=1.24.29,<1.25.0"
+botocore = ">=1.24.33,<1.25.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.5.0,<0.6.0"
 
@@ -162,7 +162,7 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.24.29"
+version = "1.24.33"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -174,7 +174,7 @@ python-dateutil = ">=2.1,<3.0.0"
 urllib3 = ">=1.25.4,<1.27"
 
 [package.extras]
-crt = ["awscrt (==0.13.5)"]
+crt = ["awscrt (==0.13.8)"]
 
 [[package]]
 name = "bump2version"
@@ -1060,7 +1060,7 @@ tests = ["pytest"]
 
 [[package]]
 name = "pureskillgg-dsdk"
-version = "0.18.0"
+version = "0.19.0"
 description = "Python Data Science Development Kit."
 category = "main"
 optional = false
@@ -1688,7 +1688,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "4f7f2c9872997b94170f9571b5c628d7634bfd4a2839cea1ffc56c65c1f4fa0e"
+content-hash = "1133bae529dad7e05efe9f458861c2ff67d98dedd029146ca108984fcf1fd909"
 
 [metadata.files]
 appnope = [
@@ -1776,12 +1776,12 @@ bleach = [
     {file = "bleach-4.1.0.tar.gz", hash = "sha256:0900d8b37eba61a802ee40ac0061f8c2b5dee29c1927dd1d233e075ebf5a71da"},
 ]
 boto3 = [
-    {file = "boto3-1.21.29-py3-none-any.whl", hash = "sha256:b7ce3bf013f0f60e40c2676d5a7b620ed927cfad0aa348a606b10e9a0387f249"},
-    {file = "boto3-1.21.29.tar.gz", hash = "sha256:127ebdf58c8825b53f1eff111e08c49ffffeb1f6d7a5665c9907ce8128fe14b1"},
+    {file = "boto3-1.21.33-py3-none-any.whl", hash = "sha256:9d8ddfefe0c4a993423e2c40831034c78fcb7b3425bf3610cf0087301dd9098b"},
+    {file = "boto3-1.21.33.tar.gz", hash = "sha256:c06b9b29f80da8cf6d9fac8f41d74a74d0f5347927acf11b15428b295fcbdd31"},
 ]
 botocore = [
-    {file = "botocore-1.24.29-py3-none-any.whl", hash = "sha256:de87907d42682179946ddfa113b9334e3c4258404aef19edd8c92381ff54775c"},
-    {file = "botocore-1.24.29.tar.gz", hash = "sha256:b467d64cd773dc4d49ef31b18a8dded554f284f799720bd12e989fe2138fd5b8"},
+    {file = "botocore-1.24.33-py3-none-any.whl", hash = "sha256:16ca4a2b72fef8caaf0eeb423dbf6cd64938442c4b9f96deb672468229e5e3f9"},
+    {file = "botocore-1.24.33.tar.gz", hash = "sha256:ea5fd180082030a6c33fa19bf011d72970f3ed23cfff1b41413069e325768103"},
 ]
 bump2version = [
     {file = "bump2version-1.0.1-py2.py3-none-any.whl", hash = "sha256:37f927ea17cde7ae2d7baf832f8e80ce3777624554a653006c9144f8017fe410"},
@@ -2469,8 +2469,8 @@ pure-eval = [
     {file = "pure_eval-0.2.2.tar.gz", hash = "sha256:2b45320af6dfaa1750f543d714b6d1c520a1688dec6fd24d339063ce0aaa9ac3"},
 ]
 pureskillgg-dsdk = [
-    {file = "pureskillgg-dsdk-0.18.0.tar.gz", hash = "sha256:655c81a845d9419e536e9d90e493602341c6fafed181060ec765adaecaa6fe0f"},
-    {file = "pureskillgg_dsdk-0.18.0-py3-none-any.whl", hash = "sha256:09dec31f6b0348439cfde95bf82498f411b4f3312dc499528e49a03e19742072"},
+    {file = "pureskillgg-dsdk-0.19.0.tar.gz", hash = "sha256:d4b455c44d11b19ab5f9e40e7e1cf8b8ca5590d2c97d3ab92bb49448f4323cef"},
+    {file = "pureskillgg_dsdk-0.19.0-py3-none-any.whl", hash = "sha256:b866e0c345c32e2ff161ca6abd12b965ceb1b9f62c68ba221b3c6ee38b56b24b"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
