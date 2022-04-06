@@ -20,4 +20,7 @@ test:
 watch:
 	@poetry run ptw
 
+notebook:
+	@poetry run jupyter notebook notebooks
+
 .PHONY: build docs test
