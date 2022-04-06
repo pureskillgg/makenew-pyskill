@@ -1,5 +1,5 @@
 """
-Setup local Jupyter notebooks with local imports
+Functions for the tutorial analysis
 """
 import pandas as pd
 
