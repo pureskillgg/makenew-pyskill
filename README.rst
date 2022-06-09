@@ -23,7 +23,7 @@ Bootstrap a new Python PureSkill.gg PySkill in less than a minute.
 This repository is both a template for creating new a PySkill,
 and fully functioning tutorial project.
 
-**If you are just getting started with PureSkill.gg data science, start here!**.
+⚡️💡⚡️ **If you are just getting started with PureSkill.gg data science, start here!**.
 
 Follow these steps to start the tutorial.
 On completing the tutorial, you will understand how to do data science
@@ -37,11 +37,11 @@ Requirements
 - Git_, `GitHub Desktop`_, or similar Git interface.
 - `Python v3.9`_ and `Poetry v1`_.
 
-_An effort has been made to use dependencies that provide Python Wheels for most platforms.
+*An effort has been made to use dependencies that provide Python Wheels for most platforms.
 This means you should not need to install extra compilers or packages.
-However, if you get errors when running `poetry install`, you may need to
+However, if you get errors when running poetry install, you may need to
 search for those errors and determine if additional packages must be installed
-on your platform._
+on your platform.*
 
 .. _Git: https://git-scm.com/
 .. _GitHub Desktop: https://desktop.github.com/
