@@ -15,9 +15,74 @@ Package skeleton for a PureSkill.gg PySkill.
 Description
 -----------
 
-Bootstrap a new Python_ PureSkill.gg PySkill in less than a minute.
+Bootstrap a new Python PureSkill.gg PySkill in less than a minute.
 
-.. _Python: https://www.python.org/
+🎓 Start with the Tutorial!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This repository is both a template for creating new a PySkill,
+and fully functioning tutorial project.
+
+⚡️💡⚡️ **If you are just getting started with PureSkill.gg data science, start here!**.
+
+Follow these steps to start the tutorial.
+On completing the tutorial, you will understand how to do data science
+with PureSkill.gg data and be setup to download data from the public data set.
+Once you complete the tutorial, you may use this repository to bootstrap you own project.
+
+Requirements
+^^^^^^^^^^^^
+
+*Tested on Linux, macOS, and Windows.*
+
+- `Python v3.9`_.
+- `Poetry v1`_.
+- Git_, `GitHub Desktop`_, or similar Git interface.
+
+*An effort has been made to use dependencies that provide Python Wheels for most platforms.
+This means you should not need to install extra compilers or packages.
+However, if you get errors when running poetry install, you may need to
+search for those errors and determine if additional packages must be installed
+on your platform.*
+
+.. _Git: https://git-scm.com/
+.. _GitHub Desktop: https://desktop.github.com/
+.. _Poetry v1: https://python-poetry.org/docs/
+.. _Python v3.9: https://www.python.org/downloads/release/python-3913/
+
+Setup
+^^^^^
+
+1. Clone this project locally using Git and enter the project working directory with
+
+::
+
+    $ git clone https://github.com/pureskillgg/makenew-pyskill.git
+    $ cd pyskill
+
+2. Confirm the correct Python (3.9.x) and Poetry (1.x.y) versions are installed with
+
+::
+
+    $ python --version
+    Python 3.9.13
+    $ poetry --version
+    Poetry version 1.1.13
+
+3. Install the dependencies with Poetry
+
+::
+
+    $ poetry install
+
+4. Start the Jupyter notebook server
+
+::
+
+    $ poetry run jupyter notebook notebooks
+
+5. Open the URL shown in the terminal,
+   and navigate to http://localhost:8888/notebooks/tutorial/1%20-%20Setup.ipynb.
 
 Features
 ~~~~~~~~
