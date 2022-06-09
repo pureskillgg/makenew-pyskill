@@ -58,7 +58,7 @@ Setup
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
     $ cd pyskill
 
-2. Confirm the correct Python (3.9.x) and Poetry versions (1.x.y) are installed with
+2. Confirm the correct Python (3.9.x) and Poetry (1.x.y) versions are installed with
 
 ::
 
