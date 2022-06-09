@@ -57,7 +57,6 @@ Setup
 
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
     $ cd pyskill
-    $ poetry install
 
 2. Confirm the correct Python (3.9.x) and Poetry versions (1.x.y) are installed with
 
