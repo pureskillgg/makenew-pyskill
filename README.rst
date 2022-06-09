@@ -33,9 +33,11 @@ Once you complete the tutorial, you may use this repository to bootstrap you own
 Requirements
 ^^^^^^^^^^^^
 
-- Linux, macOS, or Windows.
+*Tested on Linux, macOS, and Windows.*
+
+- `Python v3.9`_.
+- `Poetry v1`_.
 - Git_, `GitHub Desktop`_, or similar Git interface.
-- `Python v3.9`_ and `Poetry v1`_.
 
 *An effort has been made to use dependencies that provide Python Wheels for most platforms.
 This means you should not need to install extra compilers or packages.
