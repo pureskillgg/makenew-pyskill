@@ -65,7 +65,7 @@ Setup
 ::
 
     $ python --version
-    Python 3.9.13
+    Python 3.9.12
     $ poetry --version
     Poetry version 1.1.13
 
