@@ -14,8 +14,8 @@ python = "^3.9"
 numpy = "^1.22.3"
 pandas = "^1.4.1"
 python-dotenv = "^0.20.0"
-pureskillgg-dsdk = ">=0.31.0"
-pureskillgg-csgo-dsdk = ">=0.10.0"
+pureskillgg-dsdk = "^1.0.2b2"
+pureskillgg-csgo-dsdk = "^1.0.0b2"
 requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]

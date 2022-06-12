@@ -1061,7 +1061,7 @@ tests = ["pytest"]
 
 [[package]]
 name = "pureskillgg-csgo-dsdk"
-version = "0.10.0"
+version = "1.0.0b2"
 description = "Python Data Science Development Kit for CS:GO."
 category = "main"
 optional = false
@@ -1069,12 +1069,12 @@ python-versions = ">=3.9,<4.0"
 
 [package.dependencies]
 pandas = ">=1.3.2,<2.0.0"
-pureskillgg-dsdk = ">=0.31.0"
+pureskillgg-dsdk = ">=1.0.2b1,<2.0.0"
 structlog = ">=21.1.0,<22.0.0"
 
 [[package]]
 name = "pureskillgg-dsdk"
-version = "0.31.1"
+version = "1.0.2b2"
 description = "Python Data Science Development Kit."
 category = "main"
 optional = false
@@ -1674,7 +1674,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b74332db1ae12b080c5e2427a013d45c2f972062c5a1a95452c5d3c793171bcf"
+content-hash = "831b1162f35cfed15248d0705fb44729e3b4ba739c61dff77377accc977bc5c3"
 
 [metadata.files]
 appnope = [
@@ -2425,12 +2425,12 @@ pure-eval = [
     {file = "pure_eval-0.2.2.tar.gz", hash = "sha256:2b45320af6dfaa1750f543d714b6d1c520a1688dec6fd24d339063ce0aaa9ac3"},
 ]
 pureskillgg-csgo-dsdk = [
-    {file = "pureskillgg-csgo-dsdk-0.10.0.tar.gz", hash = "sha256:451646bbe6d1b5e47682327e32bbec3034b844a5a51ce0e4c0e104a372982067"},
-    {file = "pureskillgg_csgo_dsdk-0.10.0-py3-none-any.whl", hash = "sha256:064e8bc5e7d3cbbbd10730cd229e70119030fe43ca54b1cdbe678083c037eb28"},
+    {file = "pureskillgg-csgo-dsdk-1.0.0b2.tar.gz", hash = "sha256:370de128a2b34ab493c56ff584cab102d15656706b5a9e244db04bb365cb8c48"},
+    {file = "pureskillgg_csgo_dsdk-1.0.0b2-py3-none-any.whl", hash = "sha256:8779090818d2632923ce4d2e99fdb7062175af5f0e3b9210cb9a69a2fc8ee3f9"},
 ]
 pureskillgg-dsdk = [
-    {file = "pureskillgg-dsdk-0.31.1.tar.gz", hash = "sha256:cfebefd4e1c21fbf0dfda9ffcdff4f4261f7872cea00214491c50b4843064dd6"},
-    {file = "pureskillgg_dsdk-0.31.1-py3-none-any.whl", hash = "sha256:7ef2880db2b91bc1909058f3d26751483ed3652fe059c79d02450584c4543a70"},
+    {file = "pureskillgg-dsdk-1.0.2b2.tar.gz", hash = "sha256:dc7191a735f31c844d4484e461d035e114bdbe26100c21897969552cb5f0c7f6"},
+    {file = "pureskillgg_dsdk-1.0.2b2-py3-none-any.whl", hash = "sha256:6f73b32c843106535037a57ccf94a3d6b886e95f7f2c7e524c5cfdae128856b7"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
