@@ -195,15 +195,15 @@ Installation
 ------------
 
 This package is registered on the `Python Package Index (PyPI)`_
-as pureskillgg_makenew_pyskill_.
+as pureskillgg-makenew_pyskill_.
 
 Install it with
 
 ::
 
-    $ poetry add pureskillgg_makenew_pyskill
+    $ poetry add pureskillgg-makenew-pyskill
 
-.. _pureskillgg_makenew_pyskill: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
+.. _pureskillgg-makenew-pyskill: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
 .. _Python Package Index (PyPI): https://pypi.python.org/
 
 Development and Testing
