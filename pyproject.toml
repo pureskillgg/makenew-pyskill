@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pureskillgg-makenew-pyskill"
-version = "0.3.1"
+version = "0.3.2"
 description = "Package skeleton for a PureSkill.gg PySkill."
 authors = ["PureSkill.gg <contact@pureskill.gg>"]
 license = "MIT"
