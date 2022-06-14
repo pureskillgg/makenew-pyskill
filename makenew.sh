@@ -64,8 +64,8 @@ makenew () {
   sed_delete README.rst '18,201d'
   sed_insert README.rst '18i' 'TODO'
 
-  find_replace "s/^version = \".*/version = \"0.0.0\"/g"
-  find_replace "s/current_version = .*/current_version = 0.0.0/g"
+  find_replace "s/^version = \".*/version = \"0.0.0b0\"/g"
+  find_replace "s/current_version = .*/current_version = 0.0.0b0/g"
   find_replace "s/PureSkill.gg PySkill Skeleton/${mk_title}/g"
   find_replace "s/Package skeleton for a PureSkill.gg PySkill\./${mk_description}/g"
   find_replace "s/2022 FPS Critic, Inc/2022 ${mk_author}/g"
