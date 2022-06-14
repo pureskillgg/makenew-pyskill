@@ -34,7 +34,7 @@ Resources
 ^^^^^^^^^
 
 - Additional documentation at `📚 docs.pureskill.gg/datascience`_.
-- Reach out in `💬 Discord`_  if you get stuck or have any questions.  
+- Reach out in `💬 Discord`_  if you get stuck or have any questions.
 
 .. _`💬 Discord`: https://pureskill.gg/discord
 .. _`📚 docs.pureskill.gg/datascience`: https://docs.pureskill.gg/datascience/
