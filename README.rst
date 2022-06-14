@@ -23,12 +23,21 @@ Bootstrap a new Python PureSkill.gg PySkill in less than a minute.
 This repository is both a template for creating new a PySkill,
 and fully functioning tutorial project.
 
-⚡️💡⚡️ **If you are just getting started with PureSkill.gg data science, start here!**.
+⚡️💡⚡️ **If you are just getting started with PureSkill.gg data science, start here!**
 
 Follow these steps to start the tutorial.
 On completing the tutorial, you will understand how to do data science
 with PureSkill.gg data and be setup to download data from the public data set.
 Once you complete the tutorial, you may use this repository to bootstrap you own project.
+
+Resources
+^^^^^^^^^
+
+- Additional documentation at `📚 docs.pureskill.gg/datascience`_.
+- Reach out in `💬 Discord`_  if you get stuck or have any questions.  
+
+.. _`💬 Discord`: https://pureskill.gg/discord
+.. _`📚 docs.pureskill.gg/datascience`: https://docs.pureskill.gg/datascience/
 
 Requirements
 ^^^^^^^^^^^^

@@ -61,7 +61,7 @@ makenew () {
 
   git rm -rf notebooks/tutorial pureskillgg_makenew_pyskill/tutorial
 
-  sed_delete README.rst '18,191d'
+  sed_delete README.rst '18,201d'
   sed_insert README.rst '18i' 'TODO'
 
   find_replace "s/^version = \".*/version = \"0.0.0\"/g"
