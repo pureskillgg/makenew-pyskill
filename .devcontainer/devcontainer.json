@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "POETRY_VERSION": "1.1.13",
+      "POETRY_VERSION": "1.2.1",
       "VARIANT": "3.9"
     }
   },

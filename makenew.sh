@@ -61,7 +61,7 @@ makenew () {
 
   git rm -rf notebooks/tutorial pureskillgg_makenew_pyskill/tutorial
 
-  sed_delete README.rst '18,201d'
+  sed_delete README.rst '18,200d'
   sed_insert README.rst '18i' 'TODO'
 
   old_title="PureSkill.gg PySkill Skeleton"

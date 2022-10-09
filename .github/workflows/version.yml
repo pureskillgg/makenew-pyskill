@@ -1,6 +1,8 @@
 ---
 name: version
 
+run-name: ${{ github.event.inputs.version }}${{ github.event.client_payload.version }}
+
 on:
   workflow_dispatch:
     inputs:
@@ -12,7 +14,7 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Checkout
@@ -42,18 +44,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
       - name: Setup
         uses: ./.github/actions/setup
-      - name: Lint
-        run: make lint
-      - name: Test
-        run: make test
-      - name: Build
-        run: make build
       - name: Cut ${{ github.event.inputs.version }}${{ github.event.client_payload.version }} version
         run: |
-          version="${{ github.event.inputs.version }}${{ github.event.client_payload.version }}"
-          if [[ "${version}" =~ [0-9] ]]; then
-            poetry run bump2version --sign-tags --new-version $version major
-          else
-            poetry run bump2version --sign-tags $version
-          fi
-          git push && git push --tags
+          poetry version "${{ github.event.inputs.version }}${{ github.event.client_payload.version }}"
+          make version
