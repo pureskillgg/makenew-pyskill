@@ -16,12 +16,12 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_TOKEN }}
       - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@v5
+        uses: crazy-max/ghaction-import-gpg@v7
         id: import_gpg
         with:
           git_user_signingkey: true
@@ -35,7 +35,7 @@ jobs:
       - name: Format
         run: make format
       - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Run format
           commit_user_name: ${{ secrets.GIT_USER_NAME }}
