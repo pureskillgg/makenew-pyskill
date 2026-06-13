@@ -1,6 +1,6 @@
 [project]
 name = "pureskillgg-makenew-pyskill"
-version = "0.5.0"
+version = "0.5.1"
 description = "Package skeleton for a PureSkill.gg PySkill."
 authors = [{ name = "PureSkill.gg", email = "contact@pureskill.gg" }]
 license = "MIT"
