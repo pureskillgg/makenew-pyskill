@@ -46,5 +46,11 @@ jobs:
         uses: ./.github/actions/setup
       - name: Cut ${{ github.event.inputs.version }}${{ github.event.client_payload.version }} version
         run: |
-          poetry version "${{ github.event.inputs.version }}${{ github.event.client_payload.version }}"
+          version="${{ github.event.inputs.version }}${{ github.event.client_payload.version }}"
+          case "$version" in
+            major|minor|patch|stable|alpha|beta|rc|post|dev)
+              uv version --bump "$version" ;;
+            *)
+              uv version "$version" ;;
+          esac
           make version

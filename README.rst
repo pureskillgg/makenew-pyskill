@@ -45,18 +45,18 @@ Requirements
 *Tested on Linux, macOS, and Windows.*
 
 - `Python v3.9`_.
-- `Poetry v1`_.
+- uv_.
 - Git_, `GitHub Desktop`_, or similar Git interface.
 
 *An effort has been made to use dependencies that provide Python Wheels for most platforms.
 This means you should not need to install extra compilers or packages.
-However, if you get errors when running poetry install, you may need to
+However, if you get errors when running uv sync, you may need to
 search for those errors and determine if additional packages must be installed
 on your platform.*
 
 .. _Git: https://git-scm.com/
 .. _GitHub Desktop: https://desktop.github.com/
-.. _Poetry v1: https://python-poetry.org/docs/
+.. _uv: https://docs.astral.sh/uv/
 .. _Python v3.9: https://www.python.org/downloads/release/python-3913/
 
 Setup
@@ -69,26 +69,26 @@ Setup
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
     $ cd pyskill
 
-2. Confirm the correct Python (3.9.x) and Poetry (1.x.y) versions are installed with
+2. Confirm the correct Python (3.9.x) and uv (0.11.x) versions are installed with
 
 ::
 
     $ python --version
     Python 3.9.12
-    $ poetry --version
-    Poetry version 1.1.13
+    $ uv --version
+    uv 0.11.21
 
-3. Install the dependencies with Poetry
+3. Install the dependencies with uv
 
 ::
 
-    $ poetry install
+    $ uv sync
 
 4. Start the Jupyter notebook server
 
 ::
 
-    $ poetry run jupyter notebook notebooks
+    $ uv run jupyter notebook notebooks
 
 5. Open the URL shown in the terminal,
    and navigate to http://localhost:8888/notebooks/tutorial/1%20-%20Setup.ipynb.
@@ -97,7 +97,7 @@ Features
 ~~~~~~~~
 
 - Publishing to PyPI_.
-- Secure dependency management with Poetry_.
+- Secure dependency management with uv_.
 - Linting with Pylint_.
 - Uncompromising code formatting with Black_.
 - pytest_ helps you write better programs.
@@ -160,8 +160,8 @@ Bootstrapping a New Project
 
    ::
 
-     $ poetry install
-     $ poetry version patch
+     $ uv sync
+     $ uv version --bump patch
      $ make version
 
 Updating
@@ -209,7 +209,7 @@ Install it with
 
 ::
 
-    $ poetry add pureskillgg-makenew-pyskill
+    $ uv add pureskillgg-makenew-pyskill
 
 .. _pureskillgg-makenew-pyskill: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
 .. _Python Package Index (PyPI): https://pypi.python.org/
@@ -224,7 +224,7 @@ Quickstart
 
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
     $ cd pyskill
-    $ poetry install
+    $ uv sync
 
 Run each command below in a separate terminal window:
 
@@ -249,15 +249,14 @@ Clone the project with
 Requirements
 ~~~~~~~~~~~~
 
-You will need `Python 3`_ and Poetry_.
+You will need `Python 3`_ and uv_.
 
 Install the development dependencies with
 
 ::
 
-    $ poetry install
+    $ uv sync
 
-.. _Poetry: https://poetry.eustace.io/
 .. _Python 3: https://www.python.org/
 
 Tests
@@ -285,14 +284,14 @@ Run tests on changes with
 Publishing
 ~~~~~~~~~~
 
-Use the `poetry version`_ command to release a new version.
+Use the `uv version`_ command to release a new version.
 Then run `make version` to commit and push a new git tag
 which will trigger a GitHub action.
 
 Publishing may be triggered using on the web
 using a `workflow_dispatch on GitHub Actions`_.
 
-.. _Poetry version: https://python-poetry.org/docs/cli/#version
+.. _uv version: https://docs.astral.sh/uv/reference/cli/#uv-version
 .. _workflow_dispatch on GitHub Actions: https://github.com/pureskillgg/makenew-pyskill/actions?query=workflow%3Aversion
 
 GitHub Actions

@@ -6,32 +6,21 @@ inputs:
   python_version:
     description: The Python version.
     required: false
-    default: '3.9.12'
-  poetry_version:
-    description: The Poetry version.
+    default: '3.9'
+  uv_version:
+    description: The uv version.
     required: false
-    default: '1.2.1'
+    default: '0.11.21'
 
 runs:
   using: composite
   steps:
-    - name: Setup Poetry cache
-      uses: actions/cache@v5
+    - name: Setup uv
+      uses: astral-sh/setup-uv@v6
       with:
-        path: ~/.local
-        key: poetry-${{ inputs.poetry_version }}
-    - name: Setup Poetry
-      uses: snok/install-poetry@v1
-      with:
-        version: ${{ inputs.poetry_version }}
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        cache: poetry
+        version: ${{ inputs.uv_version }}
         python-version: ${{ inputs.python_version }}
-    - name: Check lockfile
-      shell: bash
-      run: poetry lock --check
+        enable-cache: true
     - name: Install dependencies
       shell: bash
-      run: poetry install --sync
+      run: uv sync

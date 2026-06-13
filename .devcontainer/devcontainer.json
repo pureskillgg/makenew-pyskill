@@ -3,12 +3,10 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "POETRY_VERSION": "1.2.1",
       "VARIANT": "3.9"
     }
   },
   "remoteEnv": {
-    "POETRY_VIRTUALENVS_IN_PROJECT": "true",
     "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
   },
   "extensions": [
@@ -18,6 +16,6 @@
     "EditorConfig.EditorConfig"
   ],
   "forwardPorts": [8888],
-  "postCreateCommand": "poetry install",
+  "postCreateCommand": "uv sync",
   "remoteUser": "vscode"
 }

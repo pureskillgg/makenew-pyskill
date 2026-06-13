@@ -2,15 +2,10 @@ ARG VARIANT="3"
 
 FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
 
-ARG POETRY_VERSION="1.2.1"
-ARG POETRY_SRC="https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py"
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 USER vscode
 WORKDIR /home/vscode
-
-RUN curl -fsSL -o install-poetry.py "${POETRY_SRC}" \
- && python install-poetry.py --version $POETRY_VERSION \
- && rm install-poetry.py
 
 RUN mkdir -p .config/git \
  && echo ".vscode/*" >> .config/git/ignore \

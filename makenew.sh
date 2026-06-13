@@ -39,7 +39,7 @@ stage_env () {
   git rm -f makenew.sh
   echo
   echo 'Staging changes.'
-  git checkout poetry.lock
+  git checkout uv.lock
   git add --all
   echo
   echo 'Done!'
