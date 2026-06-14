@@ -5,14 +5,14 @@ description = "Package skeleton for a PureSkill.gg PySkill."
 authors = [{ name = "PureSkill.gg", email = "contact@pureskill.gg" }]
 license = "MIT"
 readme = "README.rst"
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.14,<4.0"
 dependencies = [
-    "numpy>=1.22.3,<2.0.0",
-    "pandas>=1.4.1,<2.0.0",
-    "python-dotenv>=0.20.0,<0.21.0",
+    "numpy>=2.4.0,<3.0.0",
+    "pandas>=2.3.0,<3.0.0",
+    "python-dotenv>=1.2.0,<2.0.0",
     "requests>=2.27.1,<3.0.0",
-    "pureskillgg-dsdk>=1.2.0,<2.0.0",
-    "pureskillgg-csgo-dsdk>=1.1.0,<2.0.0",
+    "pureskillgg-dsdk>=3.0.0,<4.0.0",
+    "pureskillgg-csgo-dsdk>=3.0.0,<4.0.0",
 ]
 
 [project.urls]
@@ -21,13 +21,12 @@ Repository = "https://github.com/pureskillgg/makenew-pyskill"
 
 [dependency-groups]
 dev = [
-    "black>=22.3.0,<23.0.0",
-    "pylint>=2.4.0,<3.0.0",
-    "pytest>=7.1.1,<8.0.0",
-    "pytest-cov>=4.0.0,<5.0.0",
-    "pytest-runner>=6.0.0,<7.0.0",
+    "black>=26.0.0,<27.0.0",
+    "pylint>=4.0.0,<5.0.0",
+    "pytest>=9.0.0,<10.0.0",
+    "pytest-cov>=7.0.0,<8.0.0",
     "pytest-watch>=4.2.0,<5.0.0",
-    "matplotlib>=3.5.1,<4.0.0",
+    "matplotlib>=3.11.0,<4.0.0",
     "jupyter>=1.0.0,<2.0.0",
 ]
 
@@ -38,3 +37,6 @@ build-backend = "uv_build"
 [tool.uv.build-backend]
 module-root = ""
 module-name = "pureskillgg_makenew_pyskill"
+
+[tool.black]
+target-version = ["py314"]
