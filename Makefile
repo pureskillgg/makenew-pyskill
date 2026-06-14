@@ -21,7 +21,7 @@ notebook:
 	@uv run jupyter notebook notebooks
 
 version:
-	@git add pyproject.toml
+	@git add pyproject.toml uv.lock
 	@git commit -m "$$(uv version --short)"
 	@git tag --sign "v$$(uv version --short)" -m "$(uv version --short)"
 	@git push --follow-tags
