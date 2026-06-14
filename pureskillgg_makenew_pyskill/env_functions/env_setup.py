@@ -1,6 +1,7 @@
 """
 Setup env vars
 """
+
 import os
 from dotenv import load_dotenv
 
