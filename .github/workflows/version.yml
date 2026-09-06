@@ -1,7 +1,7 @@
 ---
 name: version
 
-run-name: ${{ github.event.inputs.version }}${{ github.event.client_payload.version }}
+run-name: Cut ${{ github.event.inputs.version }}${{ github.event.client_payload.version }}
 
 on:
   workflow_dispatch:
@@ -45,8 +45,10 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Cut ${{ github.event.inputs.version }}${{ github.event.client_payload.version }} version
+        env:
+          VERSION: ${{ github.event.inputs.version }}${{ github.event.client_payload.version }}
         run: |
-          version="${{ github.event.inputs.version }}${{ github.event.client_payload.version }}"
+          version="$VERSION"
           case "$version" in
             major|minor|patch|stable|alpha|beta|rc|post|dev)
               uv version --bump "$version" ;;
