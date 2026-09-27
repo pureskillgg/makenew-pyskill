@@ -23,7 +23,7 @@ notebook:
 version:
 	@git add pyproject.toml uv.lock
 	@git commit -m "$$(uv version --short)"
-	@git tag --sign "v$$(uv version --short)" -m "$(uv version --short)"
+	@git tag --sign "v$$(uv version --short)" -m "$$(uv version --short)"
 	@git push --follow-tags
 
 .PHONY: build format lint notebook test watch version
