@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - Pin workflow runners to `ubuntu-24.04`.
 
+- Require `pureskillgg-dsdk` 4. Its `build_basic_tomes` builds tomes that mix older and newer matches; `make_tome`, which the tutorial uses, still fails on a page that mixes them. The lock moves to dsdk 4.0.1 and csgo-dsdk 3.3.1.
+
 - Harden the deploy workflows: pass the version input through `env:` instead of interpolating it into the shell line; give the dispatch and tag workflows readable run titles.
 
 - GitHub Actions updated to Node 24 runtimes: `actions/checkout` v5 to v7; `astral-sh/setup-uv` v8.2.0 to v9.0.0.

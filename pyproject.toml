@@ -11,7 +11,7 @@ dependencies = [
     "pandas>=2.3.0,<3.0.0",
     "python-dotenv>=1.2.0,<2.0.0",
     "requests>=2.27.1,<3.0.0",
-    "pureskillgg-dsdk>=3.0.0,<4.0.0",
+    "pureskillgg-dsdk>=4.0.1,<5.0.0",
     "pureskillgg-csgo-dsdk>=3.0.0,<4.0.0",
 ]
 
