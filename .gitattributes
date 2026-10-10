@@ -1,0 +1,2 @@
+# Match data: parquet files and gzipped JSON, never line-converted
+sample_data/csds/** binary

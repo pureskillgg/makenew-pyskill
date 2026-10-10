@@ -15,9 +15,15 @@ def aggregate_footsteps(df_footsteps) -> pd.DataFrame:
 
 
 def simplify_player_info(df_player_info) -> pd.DataFrame:
-    """Extract rank, wins, and friendly commends per player"""
+    """
+    Extract wins, rank and rank type per player.
+
+    rank_type says which scale rank is on: 11 is the Premier CS Rating,
+    12 the competitive skill groups (0 to 18), and -1 no rank at all
+    (FACEIT and other third-party matches).
+    """
     return (
-        df_player_info[["player_id_fixed", "commends_friendly", "wins", "rank"]]
+        df_player_info[["player_id_fixed", "wins", "rank", "rank_type"]]
         .groupby("player_id_fixed", as_index=False)
         .max()
     )

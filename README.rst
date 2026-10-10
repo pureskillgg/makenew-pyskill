@@ -26,8 +26,9 @@ and fully functioning tutorial project.
 ⚡️💡⚡️ **If you are just getting started with PureSkill.gg data science, start here!**
 
 Follow these steps to start the tutorial.
-On completing the tutorial, you will understand how to do data science
-with PureSkill.gg data and be setup to download data from the public data set.
+The tutorial runs on four Counter-Strike 2 matches that come with this repo, in `sample_data`.
+On completing it, you will understand how to do data science with PureSkill.gg data
+and be set up to get more from the public data set on the AWS Data Exchange.
 Once you complete the tutorial, you may use this repository to bootstrap you own project.
 
 Resources
@@ -44,7 +45,7 @@ Requirements
 
 *Tested on Linux, macOS, and Windows.*
 
-- `Python v3.9`_.
+- `Python v3.14`_.
 - uv_.
 - Git_, `GitHub Desktop`_, or similar Git interface.
 
@@ -57,7 +58,7 @@ on your platform.*
 .. _Git: https://git-scm.com/
 .. _GitHub Desktop: https://desktop.github.com/
 .. _uv: https://docs.astral.sh/uv/
-.. _Python v3.9: https://www.python.org/downloads/release/python-3913/
+.. _Python v3.14: https://www.python.org/downloads/
 
 Setup
 ^^^^^
@@ -67,14 +68,14 @@ Setup
 ::
 
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
-    $ cd pyskill
+    $ cd makenew-pyskill
 
-2. Confirm the correct Python (3.9.x) and uv (0.11.x) versions are installed with
+2. Confirm the correct Python (3.14.x) and uv (0.11.x) versions are installed with
 
 ::
 
     $ python --version
-    Python 3.9.12
+    Python 3.14.6
     $ uv --version
     uv 0.11.21
 
@@ -223,7 +224,7 @@ Quickstart
 ::
 
     $ git clone https://github.com/pureskillgg/makenew-pyskill.git
-    $ cd pyskill
+    $ cd makenew-pyskill
     $ uv sync
 
 Run each command below in a separate terminal window:
