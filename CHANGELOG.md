@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Rename the workflows as they show on the Actions tab (CI, Format, Cut version, Publish) with readable run titles; CI runs on pushes and pull requests to master and `ver/**`, so a fork's PR gets CI; one version cut at a time, with a required version input; the version tag is pushed only together with its branch (`git push --atomic`); format skips fork and Dependabot PRs.
+
 - Pin workflow runners to `ubuntu-24.04`.
 
 - Require `pureskillgg-dsdk` 4. Its `build_basic_tomes` builds tomes that mix older and newer matches; `make_tome` still fails on a page that mixes their flag columns. The lock moves to dsdk 4.0.1 and csgo-dsdk 3.3.1.

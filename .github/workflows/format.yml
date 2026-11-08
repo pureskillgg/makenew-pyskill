@@ -1,5 +1,6 @@
 ---
-name: format
+name: Format
+run-name: "${{ github.event_name == 'pull_request' && format('Format: {0}', github.event.pull_request.title) || format('Format {0}', github.ref_name) }}"
 
 on:
   pull_request:
@@ -10,8 +11,15 @@ on:
     types:
       - format
 
+concurrency:
+  group: format-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   fix:
+    # Skip a fork's PR and a run Dependabot starts (neither gets the secrets this job pushes with),
+    # and Dependabot's own PRs (a pushed format commit stops Dependabot rebasing them).
+    if: ${{ github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]' && github.event.pull_request.user.login != 'dependabot[bot]') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:

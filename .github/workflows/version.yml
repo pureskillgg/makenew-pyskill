@@ -1,5 +1,5 @@
 ---
-name: version
+name: Cut version
 
 run-name: Cut ${{ github.event.inputs.version }}${{ github.event.client_payload.version }}
 
@@ -7,10 +7,15 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Version to cut
+        description: 'patch, minor, major or X.Y.Z'
+        required: true
   repository_dispatch:
     types:
       - version
+
+concurrency:
+  group: version
+  cancel-in-progress: false
 
 jobs:
   release:
