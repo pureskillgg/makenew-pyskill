@@ -6,7 +6,7 @@ PureSkill.gg PySkill Skeleton
 .. |PyPI| image:: https://img.shields.io/pypi/v/pureskillgg-makenew-pyskill.svg
    :target: https://pypi.python.org/pypi/pureskillgg-makenew-pyskill
    :alt: PyPI
-.. |GitHub Actions| image:: https://github.com/pureskillgg/makenew-pyskill/workflows/main/badge.svg
+.. |GitHub Actions| image:: https://github.com/pureskillgg/makenew-pyskill/actions/workflows/main.yml/badge.svg
    :target: https://github.com/pureskillgg/makenew-pyskill/actions
    :alt: GitHub Actions
 
@@ -293,7 +293,7 @@ Publishing may be triggered using on the web
 using a `workflow_dispatch on GitHub Actions`_.
 
 .. _uv version: https://docs.astral.sh/uv/reference/cli/#uv-version
-.. _workflow_dispatch on GitHub Actions: https://github.com/pureskillgg/makenew-pyskill/actions?query=workflow%3Aversion
+.. _workflow_dispatch on GitHub Actions: https://github.com/pureskillgg/makenew-pyskill/actions/workflows/version.yml
 
 GitHub Actions
 --------------

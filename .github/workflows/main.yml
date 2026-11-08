@@ -1,10 +1,16 @@
 ---
-name: main
+name: CI
+run-name: "${{ github.event_name == 'pull_request' && format('CI: {0}', github.event.pull_request.title) || '' }}"
 
 on:
   push:
     branches:
-      - '**'
+      - master
+      - 'ver/**'
+  pull_request:
+    branches:
+      - master
+      - 'ver/**'
 
 jobs:
   test:
